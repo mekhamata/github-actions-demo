@@ -32,6 +32,6 @@ jobs:
           --header 'authorization: Bearer ${{ secrets.PAT }}' \
           --header 'content-type: application/json' \
           --data '{
-            "title": "Automated issue for commit2: ${{ github.sha }}",
+            "title": "Automatedd issue for commit2: ${{ github.sha }}",
             "body": "This issue was automatically created by the Github actions workflow  **${{ github.workflow }}**. \n\n The commit Hash was: _${{ github.sha }}_." 
             }'
