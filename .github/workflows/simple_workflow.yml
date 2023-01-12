@@ -35,6 +35,5 @@ jobs:
           --header 'content-type: application/json' \
           --data '{
             "title": "Automated issue for commit: ${{ github.sha }}",
-            "body": "This issue was automatically created by the Github actions
-            workflow  **${{ github.workflow }}**. \n\n The commit Hash was:
-            _${{ github.sha }}_." }'
+            "body": "This issue was automatically created by the Github actions workflow  **${{ github.workflow }}**. \n\n The commit Hash was: _${{ github.sha }}_." 
+            }'
