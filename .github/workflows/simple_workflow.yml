@@ -30,7 +30,7 @@ jobs:
         run: |
           curl --request POST \
           --url https://api.github.com/repos/${{ github.repository }}/issues \
-          --header "X-GitHub-Api-Version: 2022-11-28"
+          --header "X-GitHub-Api-Version: 2022-11-28" \
           --header 'authorization: Bearer ${{ secrets.PAT }}' \
           --header 'content-type: application/json' \
           --data '{
