@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: webpack-artifact
-        path: public/
+        path: ./
   Test:
 
     runs-on: ubuntu-latest
