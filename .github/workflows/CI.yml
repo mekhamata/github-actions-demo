@@ -41,10 +41,15 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
+        on: [ubuntu-latest, windows-2016]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/download-artifact@v3
+      with:
+        name: webpack-artifact
+        path: public/
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
